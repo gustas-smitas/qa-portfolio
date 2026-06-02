@@ -11,4 +11,4 @@ material, test design, API testing, SQL, and Selenium/REST Assured automation.
 - `ui-automation/` — Selenium framework with Page Object Model.
 - `sql-practice/` — SQL queries solved against practice databases.
 
-Contact: gustas.smitas.work@gmail.com · [www.linkedin.com/in/gustas-smitas](https://linkedin.com/in/gustas-smitas)
+Contact: gustas.smitas@proton.me · [www.linkedin.com/in/gustas-smitas](https://linkedin.com/in/gustas-smitas)
