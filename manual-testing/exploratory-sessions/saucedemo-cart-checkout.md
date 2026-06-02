@@ -17,14 +17,14 @@ Explore the cart and checkout flow. Note anything that feels off — visual glit
 
 ## Areas Explored
 
-- [ ] Adding items to cart from inventory page
-- [ ] Removing items from inventory page
-- [ ] Cart badge (does count update correctly?)
-- [ ] Cart page — item details, remove button, continue shopping
-- [ ] Checkout step 1 — first name, last name, postal code fields
-- [ ] Checkout step 2 — order summary, item total, tax, total
-- [ ] Checkout complete page
-- [ ] Back navigation during checkout (browser back button, "Cancel" buttons)
+- [x] Adding items to cart from inventory page
+- [x] Removing items from inventory page
+- [x] Cart badge (does count update correctly?)
+- [x] Cart page — item details, remove button, continue shopping
+- [x] Checkout step 1 — first name, last name, postal code fields
+- [x] Checkout step 2 — order summary, item total, tax, total
+- [x] Checkout complete page
+- [x] Back navigation during checkout (browser back button, "Cancel" buttons)
 
 ---
 
@@ -42,11 +42,11 @@ What you expected: When hovering over cart icon, mouse hover icon changes to 'cl
 
 What happened: Can't change the number of items to buy at checkout or in products page
 
-What you expected: Expected to chose how many items I could buy at checkout or in products page
+What you expected: Expected to choose how many items I could buy at checkout or in products page
 
 ---
 
-### 3. [Swag Labs page page heading does not link anywhere]
+### 3. Swag Labs page heading does not link anywhere
 
 What happened: page heading is inactive text only
 
@@ -54,29 +54,29 @@ What you expected: for page heading to link to homepage
 
 ---
 
-### 4. [clicking 'enter' after filling checkout credentials redirects to cart]
+### 4. clicking 'enter' after filling checkout credentials redirects to cart
 
 What happened: clicking enter after filling checkout credentials redirects back to cart page
 
-What you expected: clicking enter after filling checkout credentials redirects to checkout conformation page
+What you expected: clicking enter after filling checkout credentials redirects to checkout confirmation page
 
 ---
 
-### 5. [postal code field at checkout works with letters only]
+### 5. checkout form page accepts all symbols
 
-What happened: can press continue with invalid post code
+What happened: name, last name and postal code input fields accept all symbols and any length
 
-What you expected: invalid post code is denied
+What you expected: checkout form page denies further checkout process with invalid form inputs (input length over 255, invalid characters used)
 
 ---
 
 ## Questions / Things to Investigate Later
 
-- input lengths
-- error handling
+- Check if checkout form gracefully handles empty input fields (shows an error message)
+- Check if checkout is possible with empty shopping cart
 
 ## Time Spent
 
 Start: ~17:00
 End: ~17:30
-Total:
+Total: ~30 minutes
