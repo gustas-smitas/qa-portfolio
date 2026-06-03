@@ -1,0 +1,11 @@
+# Test Levels — Saucedemo Checkout Flow
+
+Flow: login → browse inventory → add to cart → view cart → checkout info → confirm → order complete.
+
+| Level                 | Test                                                                                                                                                                 | Why it sits at this level                                                                                                 |
+| --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| Component (Unit)      | Call `isUsernameValid("...")` directly; assert it returns true for ≤255 chars, false above.                                                                          | Single function, isolated, no UI — tests internal logic of one unit.                                                      |
+| Component Integration | Assert `calculateBalance()` returns the correct total when `convertCurrency()` supplies a converted amount — the data handoff between the two modules is correct.    | Two of our own code modules exchanging data across their interface, below the UI.                                         |
+| System                | Selenium test: log in as standard_user, add an item, complete checkout, assert "Thank you for your order" appears.                                                   | Whole assembled system, our code, exercised end-to-end through the UI.                                                    |
+| System Integration    | Verify that on checkout, our system sends a correctly-formatted charge request to the payment gateway (Stripe) and correctly handles its approved/declined response. | Our complete system crossing its boundary to an external system. Saucedemo has none, so this is the real-shop equivalent. |
+| Acceptance            | A stakeholder/end user runs the checkout against the acceptance criteria ("a customer can buy an item and receive confirmation") and signs off for release.          | Validated against business requirements, from the user's perspective — release decision.                                  |
