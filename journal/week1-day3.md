@@ -2,7 +2,7 @@
 
 **Date:** 2026-06-03
 **Focus:** Module 5 (Test Levels) — Component, Component Integration, System, System Integration, Acceptance
-**Time spent:** ~Xh (tutor session, test-levels exercise, journal)
+**Time spent:** ~3h (tutor session, test-levels exercise, journal)
 
 ---
 
